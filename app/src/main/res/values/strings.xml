@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Escola Sistema Solar</string>
+    <string name="txtCadastrar">Cadastrar usuário</string>
+    <string name="senha">Senha</string>
+    <string name="digite_sua_senha">Digite sua Senha</string>
+    <string name="sair">Sair</string>
+    <string name="login">Login</string>
+    <string name="digite_seu_login">Digite seu Login</string>
+    <string name="voltar">VOLTAR</string>
+    <string name="nome" translatable="false">Nome</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="email">Email</string>
+    <string name="cpf">CPF</string>
+    <string name="telefone">Telefone</string>
+    <string name="adminstrador">Adminstrador</string>
+    <string name="perfil">Perfil</string>
+    <string name="esqueceu_a_senha">Esqueceu a senha?</string>
+    <string name="todo">TODO</string>
+    <string name="alterar_usuario">ALTERAR USUÁRIO</string>
+    <string name="cadastrar_usuario">CADASTRAR USUÁRIO</string>
+    <string name="excluir_usuario">EXCLUIR USUÁRIO</string>
+    <string name="cadastrar_receitas">CADASTRAR RECEITAS</string>
+    <string name="visualizar_receitas">VISUALIZAR RECEITAS</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="add">Add</string>
+    <string name="cadastro_de_usu_rio">Cadastro de Usuário</string>
+</resources>

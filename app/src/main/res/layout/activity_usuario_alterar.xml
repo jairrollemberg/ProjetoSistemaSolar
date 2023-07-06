@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA32A"
+    android:orientation="vertical"
+    tools:context=".views.cadastro_usuarios.UsuarioListAlterar">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A1FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/ib_voltar_inicio"
+            android:layout_width="68dp"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/add"
+            android:onClick="cliqueListner"
+            android:src="@drawable/ic_voltar"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.369"
+            app:layout_constraintStart_toStartOf="@+id/toolbar4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Editar Usuário"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <EditText
+        android:id="@+id/editTextNomeAlterar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints=""
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textColorHint="#DD2C00"
+        android:textDirection="ltr" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/editTextCPFAlterar"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/cpf"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColorHint="#DD2C00"
+        android:textDirection="ltr"
+        app:mask="___.___.___-__"
+        app:maskCharacter="_"
+        app:maskStyle="completable" />
+
+    <EditText
+        android:id="@+id/editTextEmailAlterar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColorHint="#DD2C00"
+        android:textDirection="ltr" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/editTextTelefoneAlterar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/telefone"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingStart="10dp"
+        android:textColorHint="#DD2C00"
+        android:textDirection="ltr"
+        app:mask="(__) _____-____"
+        app:maskCharacter="_"
+        app:maskStyle="completable" />
+
+    <EditText
+        android:id="@+id/editTextPerfilAlterar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints=""
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/perfil"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textColorHint="#DD2C00"
+        android:textDirection="ltr"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextSenhaAlterar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColorHint="#DD2C00"
+        android:textDirection="ltr" />
+
+    <TextView
+        android:id="@+id/labelPerfil"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="start|center_horizontal"
+        android:labelFor="@id/switchPerfil"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:text="Perfil"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchPerfilAlterar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/white"
+        android:checked="false"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:minHeight="48sp"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        android:textColor="#DD2C00"
+        android:text="Administrador"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnAlterarUsuario"
+            android:layout_width="169dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="ALTERAR"
+            android:textColor="#DD2C00" />
+
+        <Button
+            android:id="@+id/btnExcluirUsuario"
+            android:layout_width="169dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="EXCLUIR"
+            android:textColor="#DD2C00" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>

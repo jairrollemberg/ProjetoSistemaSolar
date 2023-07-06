@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EscolaSistemaSolarNovo"
+        tools:targetApi="31">
+        <activity
+            android:name=".views.entradas_saidas.saidas.OutrasSaidasListVisualizarUSER"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.entradas_saidas.saidas.OutrasSaidasListUSER"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.entradas_saidas.saidas.OutrasSaidasListAlterar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.entradas_saidas.saidas.OutrasSaidasList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.entradas_saidas.entradas.OutrasEntradasListVisualizarUSER"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.entradas_saidas.entradas.OutrasEntradasListUSER"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.receitas.ReceitasListUSER"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.despesas.DespesasListVisualizarUSER"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.despesas.DespesasListUSER"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.receitas.ReceitasList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.custos.CustoListADD"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.custos.CustoListAlterar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.cadastro_usuarios.UsuarioCadastro"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.TelaLogin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.menu.MenuInicialADM"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.cadastro_usuarios.UsuarioList"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.custos.CustoList"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.despesas.DespesasList"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.entradas_saidas.entradas.OutrasEntradasList"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.entradas_saidas.entradas.OutrasEntradasListAdapter"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity android:name="com.example.escolasistemasolarnovo.views.cadastro_usuarios.UsuarioListAlterar" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.despesas.DespesasListAlterar" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.despesas.DespesasListADD" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.receitas.ReceitasListAlterar" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.entradas_saidas.entradas.OutrasEntradasListAlterar" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.receitas.ReceitasListADD" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.entradas_saidas.entradas.OutrasEntradasListADD" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.menu.MenuInicialUSER" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.custos.CustoListUSER" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.custos.CustoListVisualizarUSER" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.receitas.ReceitasListVisualizarUSER" />
+        <activity android:name="com.example.escolasistemasolarnovo.views.entradas_saidas.saidas.OutrasSaidasListADD" />
+    </application>
+
+</manifest>

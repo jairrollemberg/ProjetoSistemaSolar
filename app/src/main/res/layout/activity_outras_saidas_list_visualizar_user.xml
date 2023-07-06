@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFA32A"
+android:orientation="vertical"
+tools:context=".views.entradas_saidas.saidas.OutrasSaidasListVisualizarUSER">
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbarOutrasSaidas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#79FFFFFF"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="?attr/actionBarTheme">
+
+    <ImageButton
+        android:id="@+id/ib_voltar_inicio"
+        android:layout_width="68dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/add"
+        android:onClick="cliqueListner"
+        android:src="@drawable/ic_voltar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginStart="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|fill_horizontal"
+        android:text="Visualizar Outras Saídas"
+        android:textColor="#424242"
+        android:textSize="20sp" />
+
+
+</androidx.appcompat.widget.Toolbar>
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dataOutrasSaidasVisualizar"
+            android:layout_width="251dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:autofillHints=""
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/editText"
+            android:ems="10"
+            android:gravity="start|center_horizontal|center_vertical"
+            android:hint="Data"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#5D4037"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dataPickerBtn"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:text="01 JAN 2022"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:paddingStart="15dp"
+            />
+
+        <TextView
+            android:id="@+id/valorOutrasSaidasVisualizar"
+            android:layout_width="249dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="30dp"
+            android:editable="false"
+            android:autofillHints=""
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/editText"
+            android:hint="Valor"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp"
+            android:textColorHint="#455A64"
+            android:textSize="30dp"
+            android:gravity="center|start"/>
+
+        <TextView
+            android:id="@+id/origemOutrasSaidasVisualizar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/editText"
+            android:editable="false"
+            android:hint="Título"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColorHint="#455A64"
+            android:textSize="25dp"
+            android:gravity="center|start"/>
+
+        <TextView
+            android:id="@+id/detalhamentoOutrasSaidasVisualizar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Detalhes e Observaçoes"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

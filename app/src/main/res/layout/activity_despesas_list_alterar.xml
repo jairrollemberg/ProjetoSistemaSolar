@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA32A"
+    android:orientation="vertical"
+    tools:context=".views.despesas.DespesasListAlterar">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDespesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#79FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageButton
+            android:id="@+id/ib_voltar_inicio"
+            android:layout_width="68dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/add"
+            android:onClick="cliqueListner"
+            android:src="@drawable/ic_voltar" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|fill_horizontal"
+            android:text="Alterar ou Excluir Despesas"
+            android:textColor="#424242"
+            android:textSize="20sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dataDespesasAlterar"
+                android:layout_width="251dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints=""
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="@color/editText"
+                android:ems="10"
+                android:gravity="start|center_horizontal|center_vertical"
+                android:hint="Data"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5D4037"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/dataPickerBtn"
+                style="?android:spinnerStyle"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:text="01 JAN 2022"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:onClick="openDataPicker"
+                />
+
+            <EditText
+                android:id="@+id/valorDespesasAlterar"
+                android:layout_width="249dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints=""
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="@color/editText"
+                android:hint="Valor"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:textColorHint="#455A64" />
+
+            <EditText
+                android:id="@+id/origemDespesasAlterar"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:height="50dp"
+                android:autofillHints=""
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="@color/editText"
+                android:hint="Título"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColorHint="#455A64"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/detalhamentoDespesasAlterar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Detalhes e Observaçoes"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnAlterarDespesas"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_gravity="center|start"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/roundstyle"
+                android:shadowColor="#000000"
+                android:text="ALterar"
+                android:textAlignment="center"
+                android:textColor="#EF6C00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnExcluirDespesas"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_gravity="center|end"
+                android:background="@drawable/roundstyle"
+                android:shadowColor="#000000"
+                android:text="Excluir"
+                android:textAlignment="center"
+                android:textColor="#EF6C00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

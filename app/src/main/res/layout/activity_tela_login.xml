@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA32A"
+    tools:context=".views.TelaLogin">
+
+
+    <ImageView
+        android:id="@+id/imgPrincipal"
+        android:layout_width="417dp"
+        android:layout_height="356dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_escola"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="218dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="364dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/editText"
+        android:ems="10"
+        android:hint="@string/login"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#DD2C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgPrincipal"
+        app:layout_constraintVertical_bias="0.166"
+        tools:ignore="TextContrastCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="206dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/editText"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColorHint="#DD2C00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editLogin"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/entrar"
+        android:textAlignment="center"
+        android:textColor="#DD2C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextSenha"
+        app:layout_constraintVertical_bias="0.102"/>
+
+    <TextView
+        android:id="@+id/txtRecuperarSenha"
+        android:layout_width="157dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/esqueceu_a_senha"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/CriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Criar Conta"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

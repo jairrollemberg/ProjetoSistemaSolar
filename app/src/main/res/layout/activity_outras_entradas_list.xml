@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA32A"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B7C6C4C2"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_voltar_inicio"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/voltar"
+        android:onClick="cliqueListner"
+        android:padding="16dp"
+        android:src="@drawable/ic_voltar"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_add1"
+        android:layout_width="73dp"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/add"
+        android:onClick="cliqueListner"
+        android:src="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/editPesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/pesquisar"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOutrasEntradas"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPesquisa"
+        tools:listitem="@layout/listview_outras_entradas" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:paddingTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:inputType="text"
+        android:labelFor="@id/toolbar2"
+        android:minHeight="48dp"
+        android:shadowColor="#090909"
+        android:shadowRadius="5"
+        android:text="Lista de Entradas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

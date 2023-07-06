@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFA32A"
+    tools:context=".views.TelaLogin">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageViewCustos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="17dp"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/img_custos"
+        app:civ_border_color="#040300"
+        app:civ_border_width="3sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageViewReceitas"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="17dp"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/img_receita"
+        app:civ_border_color="#000000"
+        app:civ_border_width="3sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageViewDespesas"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="14dp"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/img_despesas"
+        app:civ_border_color="#040300"
+        app:civ_border_width="3sp"
+        app:layout_constraintBottom_toTopOf="@+id/ImageViewOutrasSaidas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageViewCustos" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageViewOutrasEntradas"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="14dp"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/img_outras_entradas"
+        app:civ_border_color="#000000"
+        app:civ_border_width="3sp"
+        app:layout_constraintBottom_toTopOf="@+id/ImageViewOutrasSaidas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageViewReceitas" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageViewOutrasSaidas"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="112dp"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/img_outras_saidas"
+        app:civ_border_color="#050400"
+        app:civ_border_width="3sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <Button
+        android:id="@+id/btnSairTelaInicial"
+
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sair"
+        android:textColor="#DD2C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageViewOutrasSaidas"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#94FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="MENU"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
